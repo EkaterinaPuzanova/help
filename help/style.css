@@ -1,0 +1,204 @@
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('./assets/fonts/Ubuntu-Light.woff2'), 
+   url('./assets/fonts/Ubuntu-Light.woff');
+	font-weight: 300;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fave';
+	src: url('./assets/fonts/Fave-Script.woff2'),
+   url('./assets/fonts/Fave-Script.woff');
+	font-weight: normal;
+	font-style: normal;
+    font-display: swap;
+}
+
+html {
+	scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: url('./assets/img/background.jpg');
+	margin: 0;
+	padding: 70px 0;
+}
+
+.container {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	background-color: blanchedalmond;
+	width: 800px;
+	min-height: 800px;
+	border: 15px solid rgb(250, 250, 250);
+	margin: 0 auto;
+} 
+
+.header {
+	display: flex;
+	font-family: 'Fave', sans-serif;
+	height: 200px;
+	background: url('./assets/img/background-header.jpg') no-repeat center center / cover;
+}
+
+.header p, .header h1 {
+	margin: 0;
+}
+
+.header h1 {
+	margin-bottom: -50px;
+	font-weight: normal;
+}
+
+.name {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 100%;
+	font-size: 40px;
+	color: rgb(255, 255, 255);
+}
+
+.foto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+} 
+
+.foto img {
+	border-radius: 50%;
+	border: 7px solid rgb(255, 255, 255);
+}
+
+.nav ul {
+	display: flex;
+	justify-content: center;
+	padding-inline-start: 0;
+}
+
+.nav ul li {
+	list-style-type: none;
+    display: flex;
+    height: 40px;
+    width: 100px;
+	font-size: 0.9rem;
+    background-color: rgb(189, 171, 91);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.nav_link {
+	display: flex;
+	height: 40px;
+	width: 100px;
+	border-radius: 50%;
+	text-decoration: none;
+	align-items: center;
+    justify-content: center;
+	color: rgb(255, 255, 255);
+	transition: all 0.5s ease;
+}
+
+.nav_link:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.contacts ul {
+	display: flex;
+	justify-content: center;
+}	
+
+.contacts ul li {
+	list-style-type: none;
+	display: flex;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(189, 171, 91);
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+
+.contacts ul li a {
+	display: flex;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-decoration: none;
+	align-items: center;
+    justify-content: center;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.contacts ul li a i {
+	line-height: 100%;
+}
+
+.contacts ul li a:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.main {
+	display: flex;
+	font-size: 1.05em;
+	flex-wrap: nowrap;
+	padding: 1px 10px 70px 10px;
+}
+ 
+.content, .aside {
+	background-color: rgb(243, 200, 150);
+	padding: 5px;
+}
+
+#about_me p, #english p {
+	text-indent: 40px; 
+}
+
+.aside {
+	background-color: rgb(250, 214, 181);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: rgb(255, 176, 85);
+}
+
+.footer a, footer p {
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer .github-icon {
+	margin-right: 10px;
+}
+  
+.my-github {
+	display: flex;
+	align-items: center;
+}
+
+pre {
+    font-size: 0.9rem;
+} 
+
+@media (max-width: 768px) {
+	.container {
+	  width: 100%;
+	}
+}
